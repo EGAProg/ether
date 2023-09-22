@@ -11,10 +11,107 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "deposit",
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_keyCode",
+						"type": "string"
+					}
+				],
+				"name": "CancelTransaction",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_keyCode",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_Resiever",
+						"type": "address"
+					}
+				],
+				"name": "Deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_Type",
+						"type": "string"
+					}
+				],
+				"name": "PreMake",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_keyCode",
+						"type": "string"
+					}
+				],
+				"name": "getTransact",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "premakeTransaction",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "resiever",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -28,14 +125,19 @@
 				"name": "transactions",
 				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
-					},
-					{
 						"internalType": "string",
 						"name": "keyWord",
 						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "resiever",
+						"type": "address"
 					},
 					{
 						"internalType": "uint256",
@@ -61,11 +163,6 @@
 				],
 				"name": "users",
 				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
-					},
 					{
 						"internalType": "address",
 						"name": "addr",
@@ -114,11 +211,11 @@
 	},
 	"sources": {
 		"contracts/tranzaction.sol": {
-			"keccak256": "0x1a9ab3a36b43ad08490f1305295cb0571c351ee97088238eb010fb57dcceefff",
+			"keccak256": "0x84ec4625604647b0c8bfb42a820212de5caedab567102a3d3f47e61441a34e9c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7d41af51777083968471ffb67678cd37d87c1659ec18985086abfd64eafdf826",
-				"dweb:/ipfs/QmXsvq2uk4UG4Xj675rvMU8hknrFDYdwFZ7JpGSF1JRfq3"
+				"bzz-raw://f40ed945686321a975d9fd400a385e9b7a8675acf5f50e730d09f337aaf61f5f",
+				"dweb:/ipfs/QmRH5WbeHKAKBBgHZFWuSeZ8fNugXs3fnTHBMWQBhWEPRj"
 			]
 		}
 	},
